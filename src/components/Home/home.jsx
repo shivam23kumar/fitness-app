@@ -25,7 +25,7 @@ const home = () => {
         alignItems={['center', 'flex-end']}
         spacing="8"
       >
-        <Heading children="LEARN FROM THE EXPERTS" size={'2xl'} />
+        <Heading children="LEARN FROM THE EXPERTS" paddingLeft={'7'} size={'xl'} width={"full"}/>
         <Text
           fontSize={'2xl'}
           fontFamily="cursive"
@@ -41,7 +41,7 @@ const home = () => {
 
       <Image
         className="vector-graphics"
-        boxSize={'md'}
+        boxSize={'sm'}
         src={vg}
         objectFit="contain"
       />
