@@ -33,7 +33,7 @@ const Home = () => {
             alignItems={['center', 'flex-end']}
             spacing="8"
           >
-            <Heading children="LEARN FROM THE EXPERTS" size={'2xl'} />
+            <Heading textAlign={['center', 'left']} children="LEARN FROM THE EXPERTS" size={'2xl'} />
             <Text
               fontSize={'2xl'}
               fontFamily="cursive"
