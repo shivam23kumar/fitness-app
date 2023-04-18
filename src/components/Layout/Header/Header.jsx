@@ -45,7 +45,7 @@ const Header = () => {
         <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay backdropFilter={"blur(5px)"} />
             <DrawerContent>
-                <DrawerHeader justifyContent={"center"} borderBottomWidth={"1px"}> 
+                <DrawerHeader marginLeft={"1rem"} borderBottomWidth={"1px"}> 
                     MEP Fitness
                 </DrawerHeader>
                 <DrawerBody>
