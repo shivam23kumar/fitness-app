@@ -33,7 +33,7 @@ export const fileuploadstyle={
       const [imagePrev, setImageprev] = useState("");
       const [image, setImage] = useState("");
 
-      
+
       const changeImageHandler = (e)=>{
         const file = e.target.files[0]
         const reader = new FileReader();
@@ -58,7 +58,7 @@ export const fileuploadstyle={
                       <Input 
                       required
                       id="name"
-                      onChange={e=>setEmail(e.target.value)}
+                      onChange={e=>setName(e.target.value)}
                       placeholder="abc"
                       type={"text"}
                       focusBorderColor="yellow.500"
