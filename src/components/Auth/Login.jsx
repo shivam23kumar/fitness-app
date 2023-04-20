@@ -26,6 +26,7 @@ const Login = () => {
                     <Input 
                     required
                     id="email"
+                    value={email}
                     onChange={e=>setEmail(e.target.value)}
                     placeholder="abc@abc.com"
                     type={"email"}
@@ -37,6 +38,7 @@ const Login = () => {
                     <Input 
                     required
                     id="password"
+                    value={password}
                     onChange={e=>setPassword(e.target.value)}
                     placeholder="Enter your password"
                     type={"password"}

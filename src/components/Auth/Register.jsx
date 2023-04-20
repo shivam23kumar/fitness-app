@@ -27,7 +27,6 @@ export const fileuploadstyle={
 }
   
   const Register = () => {
-      const [email, setEmail] = useState("");
       const [name, setName] = useState("");
       const [password, setPassword] = useState("");
       const [imagePrev, setImageprev] = useState("");
@@ -58,6 +57,7 @@ export const fileuploadstyle={
                       <Input 
                       required
                       id="name"
+                      value={name}
                       onChange={e=>setName(e.target.value)}
                       placeholder="abc"
                       type={"text"}
@@ -69,6 +69,7 @@ export const fileuploadstyle={
                       <Input 
                       required
                       id="password"
+                      value={password}
                       onChange={e=>setPassword(e.target.value)}
                       placeholder="Enter your password"
                       type={"password"}
@@ -80,6 +81,7 @@ export const fileuploadstyle={
                       <Input 
                       required
                       id="password"
+                      value={password}
                       onChange={e=>setPassword(e.target.value)}
                       placeholder="Enter your password again"
                       type={"password"}
@@ -92,6 +94,7 @@ export const fileuploadstyle={
                       <Input 
                       required
                       id="chooseAvatar"
+                      value={image}
                       accept="image/*"
                       type={"file"}
                       focusBorderColor="yellow.500"
