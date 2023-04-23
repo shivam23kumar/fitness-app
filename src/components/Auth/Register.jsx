@@ -29,7 +29,7 @@ export const fileuploadstyle={
   const Register = () => {
       const [name, setName] = useState("");
       const [password, setPassword] = useState("");
-      const [imagePrev, setImageprev] = useState("");
+      const [imagePrev, setImageprev] = useState();
       const [image, setImage] = useState("");
 
 
@@ -39,7 +39,7 @@ export const fileuploadstyle={
         reader.readAsDataURL(file);
         reader.onloadend=()=>{
           setImageprev(reader.result);
-          setImage(file);
+          // setImage(file);
         }
       }
     return (

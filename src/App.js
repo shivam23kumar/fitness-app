@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Request from "./components/Request/Request";
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
+import About from "./components/About/About";
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import Forgetpassword from "./components/Auth/Forgetpassword";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/request" element={<Request />} />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgetpassword" element={<Forgetpassword />} />
         <Route path="/resetpassword/:token" element={<Resetpassword />} />
