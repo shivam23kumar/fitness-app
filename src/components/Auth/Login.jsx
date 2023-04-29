@@ -19,7 +19,7 @@ const Login = () => {
     <Container h={'95vh'}>
         <VStack h={'full'} justifyContent="center" spacing={'16'}>
 
-            <Heading children={"Welcome to MEP Fitness"} />
+            <Heading children={"Welcome to MEP Fitness"} marginTop={"60px"}/>
             <form style={{width:"100%"}}>
                 <Box my={"4"}>
                     <FormLabel htmlFor="email" children="Email Address"/>

@@ -85,8 +85,8 @@ const About = () => {
     <Container maxWidth={"container.lg"} padding="16" boxShadow={"lg"}>
         <Heading children="About Us" textAlign={["center", "left"]}/>
         <Founder />
-        <Stack m="8" direction={["column","row"]} alignItems="center">
-            <Text fontFamily={"cursive"} m="8" textAlign={["center","left"]}>
+        <Stack m="4" direction={["column","row"]} alignItems="center">
+            <Text fontFamily={"cursive"} textAlign={["center","left"]}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nisi esse nesciunt ducimus dolorum autem officia eum inventore doloremque pariatur atque facere assumenda veritatis illo consequatur saepe? Corporis ipsam, rerum incidunt, saepe debitis unde quae quam voluptatem doloremque, quibusdam numquam!
             </Text>
             <Link to="/subscribe">

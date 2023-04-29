@@ -6,13 +6,19 @@ import Contact from "./components/Contact/Contact";
 import Request from "./components/Request/Request";
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
+import NotFound from "./components/Layout/NotFound/NotFound";
 import About from "./components/About/About";
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import Forgetpassword from "./components/Auth/Forgetpassword";
 import Resetpassword from "./components/Auth/Resetpassword";
+import Subscribe from "./components/Payments/Subscribe";
+import PaymentSuccess from "./components/Payments/PaymentSuccess";
+import PaymentFail from "./components/Payments/PaymentFail";
+
 function App() {
-  return <Router>
+  return (
+  <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,9 +30,14 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgetpassword" element={<Forgetpassword />} />
         <Route path="/resetpassword/:token" element={<Resetpassword />} />
+        <Route path="/subscribe" element={<Subscribe />} />
+        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
+        <Route path="/paymentfail" element={<PaymentFail />} />
+        <Route path="/notfound" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
+  )
 
   
 }
